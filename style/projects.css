@@ -1,0 +1,168 @@
+@import url("./base.css");
+
+main {
+  background: var(--bg-color);
+  padding-bottom: 10rem;
+}
+
+/* project box styling */
+
+.proj-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 30.8%;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding-bottom: 3rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-top: 6rem;
+}
+.project:hover {
+  transform: translateY(-1px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project .show-image {
+  overflow: hidden;
+  width: 100%;
+  height: 242px;
+  border-radius: 10px 10px 0 0;
+}
+
+.project img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.project:hover img {
+  transform: scale(1.04);
+}
+
+.project h1 {
+  font-size: 2rem;
+  margin: 1.8rem 0;
+  padding-left: 1rem;
+  color: var(--dark);
+  position: relative;
+  margin-left: 2rem;
+}
+
+.project h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  height: 120%;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--primary-color);
+  transform: translateY(-50%);
+}
+
+.project p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--grey);
+  padding-left: 1rem;
+  margin: 3rem 0;
+}
+
+.project .fl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2.2rem 1rem 0;
+}
+
+.project .github {
+  width: 40px;
+}
+
+.cta-row {
+  background: var(--secondary-color);
+  padding: 4rem 1.8rem;
+  margin: 10rem 0 0 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-col {
+  width: 60%;
+  color: var(--dark);
+}
+
+.cta-col h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0 1.4rem;
+}
+
+.cta-col h2 {
+  font-size: 1.8rem;
+}
+
+.cta-col h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.cta-col small {
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+}
+
+.cta-col .s-fs {
+  font-size: 1.7rem;
+}
+
+.cta-right {
+  width: 30%;
+}
+
+.proj-btn {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.6rem 2rem;
+  background: var(--primary-color);
+  color: var(--light);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.proj-btn i {
+  margin-left: 0.5rem;
+  transition: 0.2s;
+  pointer-events: none;
+  font-size: 1.4rem;
+  width: 15px;
+}
+
+.proj-btn:hover i {
+  transform: translateX(8px);
+}
+
+.cta-right .proj-btn {
+  margin: 0 0 0 auto;
+  padding: 1rem 2.2rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+
+.cta-right .proj-btn i {
+  font-size: 1.6rem;
+}
+
+.fa-arrow-right-long {
+  font-size: 1.7rem !important;
+}
