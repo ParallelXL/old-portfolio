@@ -166,3 +166,58 @@ main {
 .fa-arrow-right-long {
   font-size: 1.7rem !important;
 }
+
+@media screen and (max-width: 1200px) {
+  .project {
+    width: 31.8%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .proj-row {
+    flex-wrap: wrap;
+  }
+  .project {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .proj-row {
+    justify-content: center;
+  }
+  .project {
+    flex-direction: column;
+    width: 400px;
+    margin-top: 3rem;
+    height: fit-content;
+  }
+
+  .proj-left {
+    width: 100%;
+  }
+  .cta-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-row small,
+  .cta-row h1 {
+    font-size: 2.3rem;
+    line-height: 1.5;
+  }
+
+  .cta-row .s-fs,
+  .cta-row h2 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .cta-col {
+    width: 100% !important;
+  }
+  .cta-right .proj-btn {
+    margin: 5rem auto 1rem auto !important;
+    font-size: 1.4rem;
+  }
+  .cta-right .proj-btn i {
+    font-size: 1.4rem !important;
+    margin-left: 0.3rem !important;
+  }
+}
