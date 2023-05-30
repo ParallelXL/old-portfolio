@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./resourses/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/contact.css" />
+    <title>Ayan Nagori | Front-end developer</title>
+  </head>
+  <body>
+    <div class="switch">
+      <i class="btn-switch fa-solid fa-moon"></i>
+      <i class="btn-switch hidden fa-solid fa-sun"></i>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="nav-left">
+          <i class="fas fa-square"></i>
+          <h1>Ayan Nagori</h1>
+          <span><small>/</small> Front-end Developer</span>
+        </div>
+
+        <div class="nav-right">
+          <ul>
+            <li><a href="/index.html">ABOUT ME</a></li>
+            <li><a href="/projects.html">PROJECTS</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="menu">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill-opacity="1"
+          d="M0,96L40,96C80,96,160,96,240,133.3C320,171,400,245,480,234.7C560,224,640,128,720,122.7C800,117,880,203,960,240C1040,277,1120,267,1200,250.7C1280,235,1360,213,1400,202.7L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
+      <!-- fill="#3c4042" -->
+      <div class="container">
+        <div class="contact-row">
+          <div class="contact-col">
+            <h1><i class="fas fa-square"></i>Contact me</h1>
+            <p>
+              Wanna get a <small>minimal</small> wesbite ? <br />
+              Then contact me and I will reply to you as soon as I can
+            </p>
+            <p>
+              If you are a <small>coder / developer</small> then please give a
+              <small> reveiw / suggestion</small>
+              on this website and my other projects.
+            </p>
+          </div>
+          <form name="contact" method="POST" data-netlify="true">
+            <input
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Email ID"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="example: Your websites are cool and minimal."
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="pop-up"></div>
+
+    <footer class="container">
+      <div class="foo-left">
+        <h3>&copy; 2022 by Ayan Nagori</h3>
+        <h3>Proudly created by Ayan Nagori</h3>
+      </div>
+
+      <div class="foo-right">
+        <div class="foo-info">
+          <h2>Call</h2>
+          <span>91+ 9870699786</span>
+        </div>
+        <div class="foo-info">
+          <h2>Write</h2>
+          <span>nagoriayan07@gmail.com</span>
+        </div>
+        <div class="foo-info">
+          <h2>Follow</h2>
+          <div class="foo-links">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-google"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/base.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
