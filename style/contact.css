@@ -142,3 +142,41 @@ form button {
 .pop-up.active {
   opacity: 1;
 }
+
+@media screen and (max-width: 950px) {
+    main {
+      height: unset;
+    }
+    .contact-row {
+      margin-top: 6rem;
+      width: 100%;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .contact-row {
+      flex-direction: column;
+      width: 420px;
+      margin-top: 10rem !important;
+    }
+    form,
+    .contact-col {
+      width: 100%;
+    }
+    main {
+      padding-bottom: 0;
+    }
+    body::after {
+      height: 500px !important;
+    }
+    svg {
+      margin-top: 400px !important;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contact-row {
+      width: 100%;
+    }
+  }
+  
